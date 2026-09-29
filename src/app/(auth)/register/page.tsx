@@ -7,7 +7,9 @@ import AuthPanel from "@/components/auth/AuthPanel";
 import RegisterForm from "@/components/auth/RegisterForm";
 
 export const metadata: Metadata = {
-  title: "Create an Account — ByteSpace",
+  title: {
+    absolute: "ByteSpace",
+  },
   description:
     "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost.",
 };

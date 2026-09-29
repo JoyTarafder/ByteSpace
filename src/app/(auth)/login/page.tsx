@@ -7,7 +7,9 @@ import LoginForm from "@/components/auth/LoginForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign In — ByteSpace",
+  title: {
+    absolute: "ByteSpace",
+  },
   description:
     "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.",
 };

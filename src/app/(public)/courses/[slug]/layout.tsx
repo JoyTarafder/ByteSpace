@@ -33,13 +33,14 @@ export default async function CourseLayout({
   return (
     <div className="relative min-h-screen bg-white">
       {/* Blue Grid Hero background region */}
-      <div className="absolute top-0 inset-x-0 h-[860px] lg:h-[920px] bg-blue-grid -z-10" />
+      <div className="absolute top-0 inset-x-0 h-[580px] sm:h-[620px] lg:h-[660px] bg-blue-grid pointer-events-none" />
 
-      {/* Shared Course Hero with Title, Metadata Pills, and Share */}
-      <CourseHero course={course} />
+      <div className="relative z-10">
+        {/* Shared Course Hero with Title, Metadata Pills, and Share */}
+        <CourseHero course={course} />
 
-      {/* Main Unified 2-Column Content Grid */}
-      <Container className="pb-24">
+        {/* Main Unified 2-Column Content Grid */}
+        <Container className="pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left Column (8 cols): Media Preview, Tabs, Route-Specific Content */}
           <div className="lg:col-span-8 flex flex-col">
@@ -64,6 +65,7 @@ export default async function CourseLayout({
           </div>
         </div>
       </Container>
+      </div>
     </div>
   );
 }
