@@ -1,14 +1,34 @@
-# ByteSpace
+<p align="center">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="none">
+    <g transform="translate(1.5, 0)">
+      <path d="M10.5 10.5C10.5 4.70101 5.79899 0 0 0V21C0 26.799 4.70101 31.5 10.5 31.5V10.5Z" fill="#D4FB20"/>
+      <path d="M18.375 10.5C24.174 10.5 28.875 15.201 28.875 21H21C15.201 21 10.5 16.299 10.5 10.5L18.375 10.5Z" fill="#D4FB20"/>
+      <path d="M18.375 31.5C24.174 31.5 28.875 26.799 28.875 21H21C15.201 21 10.5 25.701 10.5 31.5L18.375 31.5Z" fill="#D4FB20"/>
+    </g>
+  </svg>
+</p>
 
-> **Get Access to Hundreds of Courses Available.**  
-> An online learning platform where curious minds discover skills, follow expert creators, and track their growth — all in one place.
+<h1 align="center">ByteSpace</h1>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-bytespace--weld.vercel.app-blue?style=flat-square&logo=vercel)](https://bytespace-weld.vercel.app/)
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38BDF8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
-[![Playwright](https://img.shields.io/badge/Tested%20with-Playwright-45ba4b?style=flat-square&logo=playwright)](https://playwright.dev/)
+<p align="center">
+  <strong>Get Access to Hundreds of Courses Available.</strong><br/>
+  An online learning platform where curious minds discover skills, follow expert creators, and track their growth — all in one place.
+</p>
+
+<p align="center">
+  <a href="https://bytespace-weld.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-bytespace--weld.vercel.app-blue?style=flat-square&logo=vercel" alt="Live Demo"/></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js"/></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React"/></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind%20CSS-v4-38BDF8?style=flat-square&logo=tailwindcss" alt="Tailwind CSS"/></a>
+  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tested%20with-Playwright-45ba4b?style=flat-square&logo=playwright" alt="Playwright"/></a>
+</p>
+
+<p align="center">
+  <a href="https://bytespace-weld.vercel.app/">
+    <img src="./screenshots/home.png" alt="ByteSpace Home Page" width="100%" style="border-radius: 12px; margin-top: 16px;"/>
+  </a>
+</p>
 
 ---
 
@@ -65,25 +85,6 @@ The platform allows students to browse and enroll in courses, track lesson progr
 | Class Utilities | [clsx](https://github.com/lukeed/clsx) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) | latest |
 | Testing | [Playwright](https://playwright.dev/) | 1.63+ |
 | Deployment | [Vercel](https://vercel.com/) | — |
-
----
-
-## 📸 Screenshots / Demo
-
-**🌐 Live:** [https://bytespace-weld.vercel.app/](https://bytespace-weld.vercel.app/)
-
-| Page | Screenshot |
-|---|---|
-| Home — Hero | ![Home Hero](./screenshots/home.png) |
-| Search & Catalog | ![Search Page](./screenshots/search.png) |
-| Course Detail | ![Course Detail](./screenshots/course-detail.png) |
-| Course Lessons | ![Lessons](./screenshots/lessons.png) |
-| Course Reviews | ![Reviews](./screenshots/reviews.png) |
-| Creator Profile | ![Creator](./screenshots/creator.png) |
-| Sign In | ![Login](./screenshots/login.png) |
-| Sign Up | ![Register](./screenshots/register.png) |
-
-> **Note:** Add screenshots to a `./screenshots/` folder at the root of the repo to populate the table above.
 
 ---
 
@@ -255,57 +256,6 @@ npx tsc --noEmit
 
 ---
 
-## 🤝 Contributing
-
-Contributions, bug reports, and feature requests are welcome!
-
-### Branching Strategy
-
-```
-main                        ← production-ready, protected
-└── feature/<feature-name>  ← all new work goes here
-└── fix/<bug-name>          ← bug fixes
-└── chore/<task-name>       ← maintenance / config changes
-```
-
-### Steps to Contribute
-
-1. **Fork** the repository and clone your fork:
-   ```bash
-   git clone https://github.com/<your-username>/ByteSpace.git
-   cd ByteSpace
-   ```
-
-2. **Create a feature branch** off `main`:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make your changes** with small, meaningful commits:
-   ```bash
-   git add .
-   git commit -m "feat: describe what you added"
-   ```
-   > Follow [Conventional Commits](https://www.conventionalcommits.org/) — use `feat:`, `fix:`, `chore:`, `docs:`, `test:`.
-
-4. **Run quality checks** before pushing:
-   ```bash
-   npm run lint
-   npx tsc --noEmit
-   npm test
-   ```
-
-5. **Push your branch** and open a Pull Request into `main`:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. In your PR description, explain **what** changed and **why**. Link any related issues.
-
-> All PRs must pass lint and type-checks before being merged.
-
----
-
 ## 👤 Author / Contact
 
 **Joy Tarafder**
@@ -313,6 +263,7 @@ main                        ← production-ready, protected
 - GitHub: [@JoyTarafder](https://github.com/JoyTarafder)
 - Project Repo: [github.com/JoyTarafder/ByteSpace](https://github.com/JoyTarafder/ByteSpace)
 - Live Demo: [bytespace-weld.vercel.app](https://bytespace-weld.vercel.app/)
+- Email: [joytarafder3@gmail.com](mailto:joytarafder3@gmail.com)
 
 ---
 
@@ -329,68 +280,3 @@ main                        ← production-ready, protected
 <p align="center">Made with ❤️ by <a href="https://github.com/JoyTarafder">Joy Tarafder</a></p>
 
 ---
-
-## Quick Start
-
-### 1. Prerequisites
-- Node.js 18.18+ or 20+
-- npm 9+
-
-### 2. Installation & Running Locally
-
-```bash
-# Navigate to the project directory
-cd bytespace
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## Quality Gates & Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Runs the local development server at `localhost:3000` |
-| `npm run lint` | Runs ESLint — ensures 0 errors and 0 warnings |
-| `npx tsc --noEmit` | Validates TypeScript types across the codebase |
-| `npm run build` | Builds the production Next.js application bundle |
-| `npm test` | Runs the full Playwright automated test suite (45 tests) |
-| `npx playwright test tests/functionality.spec.ts` | Runs the 9 functional acceptance tests |
-| `npx playwright test tests/responsive.spec.ts` | Runs the 27 responsive layout tests (1024, 768, 390px) |
-| `npx playwright test tests/visual-regression.spec.ts` | Runs the 9 desktop 1440px visual baseline captures |
-
----
-
-## Route Overview
-
-- `/` — **Home Page** (Hero with search pill & 3D shapes, Partners, Category discovery, Learning paths, Growth stats, Creator CTA, Testimonials, Footer)
-- `/search` — **Search & Catalog** (Search hero, level dropdown, sort dropdown, 9 category pills, course grid, pagination)
-- `/creators/[slug]` — **Creator Profile** (`/creators/sarah-jenkins`, Follow toggle with persistence, metrics, creator courses)
-- `/courses/[slug]` — **Course Details (About)** (`/courses/build-digital-asset-comprehensive-guide`, Overview, sneak peek images, key points checklist, enrollment action)
-- `/courses/[slug]/lessons` — **Course Lessons** (Module explorer, video lesson icons, 55% progress tracker)
-- `/courses/[slug]/reviews` — **Course Reviews** (Rating box, 5-star distribution bars, interactive star filter, verified student reviews)
-- `/login` — **Sign In** (Visual showcase, email/password validation, demo status feedback, social auth buttons)
-- `/register` — **Sign Up** (Visual showcase, name/email/password validation, terms consent)
-- `404` — **Not Found** (Custom 404 gradient hero, guidance copy, home navigation CTA)
-
----
-
-## Architecture & Code Standards
-
-- **App Router**: Uses Next.js App Router route groups `(public)` and `(auth)`.
-- **CSS Architecture**: Tailwind v4 with all custom resets layered in `@layer base` to ensure predictable cascade precedence.
-- **State Management**: Concurrent-safe `useSyncExternalStore` for `localStorage` persistence (Follow state, Course enrollment, Newsletter).
-- **Accessibility**: Semantic HTML5 landmark structure, keyboard-accessible dialogs, focus management on Escape, and ARIA labels.
-
----
-
-## Documentation & Handoff
-
-For the complete project QA report, visual comparison notes, and future roadmap, refer to [HANDOFF.md](file:///g:/New%20Projects/Job%20Assignment%20Project/HANDOFF.md).
